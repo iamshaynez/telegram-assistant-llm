@@ -16,5 +16,5 @@ export async function completion(sentence) {
         messages,
     });
 
-    return Response.json(response);
+    return Response.json(response)["response"];
 }
